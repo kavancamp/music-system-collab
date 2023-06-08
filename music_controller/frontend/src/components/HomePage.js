@@ -20,8 +20,8 @@ export default class HomePage extends Component {
         <Router>
           <Routes>
             <Route exact path="/" element={<h1>This is the home page</h1>} />
-            <Route exact path="/join" element={<RoomJoin />}></Route>
-            <Route exact path="/create" element={<CreateRoom />}></Route>
+            <Route path="/join" element={<RoomJoin />}></Route>
+            <Route path="/create" element={<CreateRoom />}></Route>
           </Routes>
         </Router>
       </>
