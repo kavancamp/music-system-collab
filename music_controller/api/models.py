@@ -1,6 +1,5 @@
 from django.db import models
-import string
-import random
+import string, random
 
 
 def generate_unique_code():
@@ -11,7 +10,8 @@ def generate_unique_code():
         if Room.objects.filter(code=code).count() == 0:
             break
 
-    return code
+    return code 
+
 
 
 class Room(models.Model):
